@@ -1,0 +1,138 @@
+@media screen and (max-width: 1024px) {
+  .banner_img {
+    display: none;
+  }
+  .banner_text {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .box {
+    max-width: inherit;
+  }
+  .box_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card_items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card {
+    max-width: inherit;
+  }
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navigator_link ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #333;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .navigator_link ul li {
+    margin: 30px 0;
+  }
+  .navigator_link ul li a {
+    font-size: 23px;
+  }
+  .navigator_link ul li a :hover {
+    color: aqua;
+  }
+  #check_img:checked ~ ul {
+    left: 0%;
+  }
+  .navigator_link .material-symbols-outlined {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_title {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .pannel_title h2 {
+    align-items: center;
+  }
+  .pannel_title.playcard {
+    padding-right: 0;
+  }
+  .pannel_title {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .card_heading {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: inherit;
+  }
+  .price_box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .label {
+    right: 0;
+    left: auto;
+  }
+  .pannel_img video {
+    display: none;
+  }
+  .pannel_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .price_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card_items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .banner_head {
+    font-size: 32px;
+  }
+  .banner_content p {
+    font-size: 16px;
+  }
+  .section_title h2 {
+    font-size: 28px;
+    color: var(--text_color);
+    padding-top: 5px;
+  }
+  .section_title p {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 56px;
+  }
+  .pannel_section {
+    padding: 80px 0px;
+  }
+  .testimonial {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .box_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .searchbar {
+    width: inherit;
+  }
+  .tail {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
